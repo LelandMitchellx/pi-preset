@@ -1,0 +1,76 @@
+{
+  "name": "pi-preset",
+  "version": "1.0.0",
+  "description": "Curated Pi Preset bundling local skills and remote extensions via dependencies",
+  "keywords": [
+    "pi-package"
+  ],
+  "dependencies": {
+    "pi-magpie": "git+https://github.com/LelandMitchellx/pi-magpie.git",
+    "billion-context": "latest",
+    "pi-context-view": "latest",
+    "@dietrichgebert/ponytail": "latest",
+    "mattpocock-skills": "git+https://github.com/mattpocock/skills.git",
+    "pi-fabric": "latest",
+    "pi-lens": "latest",
+    "@patimweb/pi-mindplace": "latest",
+    "archify": "git+https://github.com/tt-a1i/archify.git",
+    "pi-hermes-memory": "latest",
+    "pi-rewind": "latest",
+    "pi-goal-x": "latest",
+    "@juicesharp/rpiv-ask-user-question": "latest",
+    "@juicesharp/rpiv-btw": "latest",
+    "@juicesharp/rpiv-voice": "latest",
+    "pi-open-tui": "latest",
+    "pi-title": "latest",
+    "awesome-pi-themes": "latest"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-agent-core": "*",
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "typebox": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./node_modules/pi-magpie/src/index.ts",
+      "./node_modules/billion-context/dist/agent/pi-native.js",
+      "./node_modules/pi-context-view/src/index.ts",
+      "./extensions/persona-loader.ts",
+      "./node_modules/@dietrichgebert/ponytail/pi-extension/index.js",
+      "./node_modules/pi-fabric/dist/extension-bootstrap.js",
+      "./node_modules/pi-lens/dist/index.js",
+      "./node_modules/@patimweb/pi-mindplace/index.ts",
+      "./node_modules/pi-hermes-memory/src/index.ts",
+      "./extensions/fresh-session.ts",
+      "./extensions/slash-tab-fix.ts",
+      "./node_modules/pi-rewind/src/index.ts",
+      "./node_modules/pi-goal-x/extensions/goal.ts",
+      "./node_modules/@juicesharp/rpiv-ask-user-question/index.ts",
+      "./node_modules/@juicesharp/rpiv-btw/index.ts",
+      "./node_modules/@juicesharp/rpiv-voice/index.ts",
+      "./node_modules/pi-open-tui/extensions/open-tui/index.ts",
+      "./node_modules/pi-title/index.ts",
+      "./node_modules/awesome-pi-themes/extensions/*"
+    ],
+    "skills": [
+      "./skills/*",
+      "./node_modules/mattpocock-skills/skills/**",
+      "./node_modules/@dietrichgebert/ponytail/skills",
+      "./node_modules/pi-lens/skills",
+      "./node_modules/archify/archify",
+      "./node_modules/archify/.agents/skills/archify-review"
+    ],
+    "themes": [
+      "./node_modules/awesome-pi-themes/themes/*"
+    ]
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "latest",
+    "@earendil-works/pi-tui": "latest",
+    "@types/node": "latest",
+    "typescript": "latest"
+  },
+  "type": "module"
+}
