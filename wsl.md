@@ -97,7 +97,7 @@
 ### 2.6 Memory (分层记忆：跨会话知识档案与检索中心)
 * **重要性权重**：★★★☆☆（第 6 位：让 AI 拥有跨越时间与项目的成长积累）
 * **本质定位**：跨会话、跨生命周期的公司级档案库与检索中枢。
-* **分层作用域 (以 `pi-hermes-memory` 为例)**：
+* **分层作用域 (规范标准)**：
   * **User Memory**：跨项目全局生效，记录主人的工作习惯与核心偏好；
   * **Project Memory**：项目专属，记录当前仓库的特定约定（如无边框 Bento-box 设计、规范定义）；
   * **Failure Memory**：记录历史踩坑与报错教训，防止 AI 在同一个坑里跌倒两次；
@@ -134,7 +134,7 @@ graph TD
     D --> E[5. Subagent 舰队并发推进 (Fabric TS Codemode)]
     E --> F[6. 调用 MCP 编译器校验与分析 (dart-mcp-server)]
     F --> G[7. pi-rewind 自动快照兜底与 Esc+Esc 回滚]
-    G --> H[8. 最终 Review 并沉淀至 Memory (pi-hermes-memory)]
+    G --> H[8. 最终 Review 并沉淀至 Memory (持久记忆沉淀)]
 ```
 
 ---
@@ -159,7 +159,7 @@ graph TD
 | | `npm:@patimweb/pi-mindplace` | 远程 npm | `mindplace_build`, `mindplace_query` | **零 LLM 开销代码知识图谱**：本地秒级构建代码调用关系网，替代低效 raw file 扫描。 |
 | | `git:tt-a1i/archify` | 远程 Git | `archify`, `archify-review` | **交互式架构与流程图生成**：一键生成带光流追踪与暗黑模式的高保真 HTML/SVG 架构图。 |
 | **2.5 MCP** (编译器/LSP 直连总线) | `dart-mcp-server` | 外部 MCP | `analyze_files`, `lsp`, `vm_service` | **Dart/Flutter 官方分析总线**：直连真实编译器，实现精准语法诊断与运行时报错捕获。 |
-| **2.6 Memory** (分层记忆与知识召回) | `npm:pi-hermes-memory` | 远程 npm | `memory_search`, `memory_add`, `skill_manage` | **分层记忆保险柜与 RAG**：SQLite FTS5 + 向量检索，隔离用户习惯、项目约定与踩坑记录。 |
+| **2.6 Memory** (分层记忆与知识召回) | `架构规范保留` | 规范标准 | `分层记忆管理` | **分层记忆与经验归档**：规范保留用户习惯、项目约定与踩坑教训分层模型；采用极简轻量策略，支持按需接入 RAG 方案。 |
 | **2.7 Extension** (宿主外设与功能增强) | `./extensions/persona-loader.ts` | 本地内置 | `/persona` | **人设自动加载器**：通过生命周期钩子将预设人设无感注入系统提示词，跨机器免配置。 |
 | | `./extensions/fresh-session.ts` | 本地内置 | `/fresh`, `/ft`, `/ff` | **极速会话生命周期管理**：支持秒级重置持久会话，或开启不落盘的临时纯内存会话。 |
 | | `./extensions/slash-tab-fix.ts` | 本地内置 | `-底层补丁-` | **斜杠命令 Tab 参数补全热修复**：解决 Pi 原生在命令带空格时按 Tab 补全失效的底层 Bug。 |
