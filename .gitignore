@@ -13,6 +13,5 @@ Thumbs.db
 .idea/
 .vscode/
 
-# Pi 本地临时会话与记忆缓存 (如误放在预设目录下)
-.pi/sessions/
-.pi/cache/
+# Pi 本地运行时与临时缓存
+.pi/

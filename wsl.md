@@ -74,7 +74,6 @@
     * `/to-tickets`：将 Spec 垂直切片为相互阻塞依赖的细粒度工单（Tracer-bullet Tickets）；
     * `/tdd`：测试驱动开发，红-绿-重构循环；
     * `/code-review`：多维度代码质量审查与标准对齐。
-  * **苏格拉底教学库 (`socrates-skill` / `socratic-tutor`)**：通过逆向追问与概念自测，引导开发者深入掌握实现逻辑。
   * **极简编码规程 (`ponytail`)**：Senior Dev 极简视角，推崇 YAGNI 原则，坚决剪除无用抽象与过度设计。
   * **内置工程技能**：涵盖存量代码逆向分析（`codebase-reverse-spec`）、原子 Git 提交（`git-commit`）与技术调研（`tech-investigate`）。
 
@@ -112,7 +111,6 @@
   * `pi-goal-x`：提供目标驱动任务状态机，自动拆解并持续追踪长流程任务进度；
   * `@juicesharp/rpiv-ask-user-question`：提供结构化 TUI 弹窗交互问答与多选项确认；
   * `@juicesharp/rpiv-btw`：在不打断当前主任务的前提下，发起平行侧枝对话；
-    * `@juicesharp/rpiv-voice`：终端语音交互与语音播报模态支持。
 
 ### 2.8 TUI (终端交互界面：人类驾驶舱与可视化反馈)
 * **重要性权重**：★★☆☆☆（第 8 位：人类感知与操控系统的终点）
@@ -151,12 +149,10 @@ graph TD
 | **2.2 Context** (上下文工程与压缩) | `npm:billion-context` | 远程 npm | `compress`, `decompress`, `search_context` | **长会话无损分级压缩**：提取事实丢弃皮囊，解决注意力稀释，支持按需逆向还原。 |
 | | `npm:pi-context-view` | 远程 npm | `/context-view` | **思考桌面视界透镜**：实时直观查看当前会话 Token 占用率与内容结构占比。 |
 | **2.3 Skill** (专家思维 SOP 规程) | `git:mattpocock/skills` | 远程 Git | `to-spec`, `to-tickets`, `tdd`, `code-review` | **行业标杆工程思维库**：Matt Pocock 架构规程，严格拆解工单、红绿重构与双轴代码审查。 |
-| | `git:bevibing/socrates-skill` | 远程 Git | `socrates` | **苏格拉底教学技能库**：以逆向追问与思维引导模式检验方案设计与编码质量。 |
 | | `npm:@dietrichgebert/ponytail` | 远程 npm | `/ponytail`, `ponytail-audit` | **反过度工程 (YAGNI) 审计**：资深工程师极简视角，裁撤冗余胶水层与伪抽象。 |
 | | `./APPEND_SYSTEM.md` | 本地内置 | 系统追加指令 | **人设与交互式问答规程**：固化傲娇聪明鲸鱼娘人设，并强制绑定 TUI 结构化弹窗问答规范。 |
 | | `./skills/codebase-reverse-spec` | 本地内置 | `codebase-reverse-spec` | **存量老项目逆向工程**：扫描代码拓扑、反推业务 PRD、提炼统一语言并切分工单。 |
 | | `./skills/git-commit` | 本地内置 | `git-commit` | **规范化原子提交**：全自动安全扫描变更、多模块交互确认并生成标准 Commit 规范。 |
-| | `./skills/socratic-tutor` | 本地内置 | `socratic-tutor` | **苏格拉底逆向提问复盘**：需求落地后通过结构化题目自测，巩固技术决策。 |
 | | `./skills/tech-investigate` | 本地内置 | `tech-investigate` | **技术极速调研**：拆解第三方库或概念的“核心价值”与“如何使用”，拒绝空谈。 |
 | **2.4 Subagent & Engine** (执行引擎与代码透镜) | `npm:pi-fabric` | 远程 npm | `fabric_exec`, `workflow` | **分布式执行引擎与 TS 沙盒**：提供强类型 TS Codemode、Actor 模型与 Swarm 舰队调度。 |
 | | `npm:pi-lens` | 远程 npm | `pi-lens-lsp-navigation`, `ast-grep` | **高精度语义代码透镜**：Tree-Sitter / ast-grep 精准模式匹配，结合 LSP 语法树导航。 |
@@ -171,7 +167,6 @@ graph TD
 | | `npm:pi-goal-x` | 远程 npm | `create_goal`, `update_goal` | **目标驱动长任务追踪器**：拆解大任务为原子阶段状态机，防止长会话目标漂移。 |
 | | `npm:@juicesharp/rpiv-ask-user-question` | 远程 npm | `ask_user_question` | **交互式 TUI 结构化弹窗**：在需要决策确认时弹出单选/多选题，避免冗长纯文本问答。 |
 | | `npm:@juicesharp/rpiv-btw` | 远程 npm | `/btw` | **侧枝无干扰平行思考流**：在主任务推进同时发起无上下文污染的平行旁支提问。 |
-| | `npm:@juicesharp/rpiv-voice` | 远程 npm | `rpiv-voice` | **全模态语音交互**：提供终端语音识别输入与关键信息语音播报扩展。 |
 | **2.8 TUI** (终端驾驶舱与感官呈现) | `npm:pi-open-tui` | 远程 npm | `/tui` | **OpenTUI 终端驾驶舱与性能遥测**：优雅布局，实时监控 TPS、TTFT 延迟与 Token 账单。 |
 | | `npm:pi-title` | 远程 npm | `pi-title` | **智能窗口标题跟随**：根据对话内容自动提炼并设置当前终端窗口/Tab 标题。 |
 | | `npm:awesome-pi-themes` | 远程 npm | `/theme <name>` | **精选色彩主题库**：提供包含 `codex-slate`、`nord` 等在内的多套专业终端视觉主题。 |

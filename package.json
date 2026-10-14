@@ -20,7 +20,6 @@
     "pi-goal-x": "latest",
     "@juicesharp/rpiv-ask-user-question": "latest",
     "@juicesharp/rpiv-btw": "latest",
-    "@juicesharp/rpiv-voice": "latest",
     "pi-open-tui": "latest",
     "pi-title": "latest",
     "awesome-pi-themes": "latest"
@@ -49,7 +48,6 @@
       "./node_modules/pi-goal-x/extensions/goal.ts",
       "./node_modules/@juicesharp/rpiv-ask-user-question/index.ts",
       "./node_modules/@juicesharp/rpiv-btw/index.ts",
-      "./node_modules/@juicesharp/rpiv-voice/index.ts",
       "./node_modules/pi-open-tui/extensions/open-tui/index.ts",
       "./node_modules/pi-title/index.ts",
       "./node_modules/awesome-pi-themes/extensions/*"

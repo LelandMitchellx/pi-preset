@@ -1,6 +1,6 @@
 # Pi Preset 🚀
 
-> **极致精简，一键集成全部扩展**：基于 Pi 原生包规范打造的开箱即用终极预设。通过 `package.json` 将第三方远程扩展声明为依赖，免去逐个配置的繁琐流程，安装一个预设即拥有全部生产力工具！
+> **规矩先立起来，vibe才不烧心**：基于 Pi 原生包规范打造的开箱即用终极预设。通过 `package.json` 将第三方远程扩展声明为依赖，免去逐个配置的繁琐流程，安装一个预设即拥有全部生产力工具！
 
 ---
 
@@ -63,7 +63,6 @@ AI 员工手边的《岗位标准化操作手册》，固化资深工程师思�
 | **@dietrichgebert/ponytail** | npm: latest | **反过度工程 (YAGNI) 审计**：资深工程师极简视角，裁撤冗余胶水代码与伪抽象。 |
 | **codebase-reverse-spec** | 本地技能 | **存量代码逆向工程**：扫描代码拓扑、反推业务 PRD、提炼统一语言并拆解工单。 |
 | **git-commit** | 本地技能 | **规范化原子提交**：全自动安全扫描变更、多模块交互确认并生成标准 Commit 规范。 |
-| **socratic-tutor** | 本地技能 | **苏格拉底逆向复盘**：需求落地后通过交互式自测题目，引导用户深入掌握底层逻辑。 |
 | **tech-investigate** | 本地技能 | **技术极速调研**：深度分析第三方库或概念的技术价值与实战落地方法。 |
 | **mattpocock-skills** | Git: 默认分支最新 | **行业标杆架构规程库**：Matt Pocock 架构体系，工单垂直切分、红绿 TDD 与双轴代码审查。 |
 
@@ -108,7 +107,6 @@ AI 接入外部专业开发环境（IDE / Compiler / LSP）的底层跨进程标
 | **pi-goal-x** | npm: latest | **目标驱动长任务追踪器**：拆解大任务为原子阶段状态机，防止长会话目标漂移。 |
 | **@juicesharp/rpiv-ask-user-question** | npm: latest | **交互式 TUI 结构化弹窗**：在需要决策确认时弹出单选/多选题，告别死板纯文本问答。 |
 | **@juicesharp/rpiv-btw** | npm: latest | **侧枝无干扰平行思考流**：在主任务推进同时发起无上下文污染的平行旁支提问。 |
-| **@juicesharp/rpiv-voice** | npm: latest | **全模态语音交互**：提供终端语音识别输入与关键信息语音播报扩展。 |
 
 ---
 
@@ -138,6 +136,5 @@ pi-preset/
 └── skills/                # 随包分发的本地工程技能
     ├── codebase-reverse-spec/
     ├── git-commit/
-    ├── socratic-tutor/
     └── tech-investigate/
 ```
